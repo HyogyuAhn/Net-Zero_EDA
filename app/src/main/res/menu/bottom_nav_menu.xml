@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="홈" />
+    <item
+        android:id="@+id/navigation_drive"
+        android:icon="@android:drawable/ic_menu_directions"
+        android:title="운전" />
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="기록" />
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@android:drawable/ic_menu_report_image"
+        android:title="리포트" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="프로필" />
+</menu>

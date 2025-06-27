@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Original colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#e7eae5</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Eco-friendly color palette -->
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#388E3C</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="graph_fill_start">#4DB6AC</color>
+    <color name="accent">#8BC34A</color>
+    <color name="accent_light">#DCEDC8</color>
+    <color name="background">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!-- Transparent colors for overlays -->
+    <color name="primary_dark_transparent">#99388E3C</color>
+    <color name="white_transparent">#99FFFFFF</color>
+</resources>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:padding="16dp">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:contentDescription="Back"
+            android:layout_gravity="left"
+            android:paddingLeft="5dp"
+            android:text="&lt;back"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_statistics_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/statistics"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:contentDescription="Menu" />
+    </LinearLayout>
+
+    <!-- Feedback Section -->
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘 운전 습관이 좋아요! 급가속이 적었습니다."
+        android:textSize="18sp"
+        android:textColor="#388E3C"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Carbon Emission Chart Section -->
+    <LinearLayout
+        android:id="@+id/chart_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_card_bg"
+        android:orientation="vertical"
+        android:padding="13dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_carbon_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="이번주 평균 탄소배출량"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_carbon_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="1.25 kg"
+            android:textColor="#388E3C"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_carbon_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:text="목표: 2.00 kg"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <!-- Weekly Bar Chart (Placeholder, replace with custom view or library as needed) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <!-- Example for each day -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/rounded_bar_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="월"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rounded_bar_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="화"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rounded_bar_bg"
+                    android:backgroundTint="#388E3C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="수"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical"
+                >
+
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_bar_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="목"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded_bar_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="금"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/rounded_bar_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="토"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/rounded_bar_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="일"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Daily Analysis Section (No Card) -->
+    <LinearLayout
+        android:id="@+id/analysis_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center_vertical">
+
+            <Button
+                android:id="@+id/btn_prev_day"
+                android:layout_width="30dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="left"
+                android:paddingLeft="0dp"
+                android:text="&lt;"
+                android:textSize="25dp"
+                android:background="@color/transparent"
+                android:textColor="#388E3C"
+                android:includeFontPadding="false"
+                android:contentDescription="Previous Day"
+
+                />
+            <TextView
+                android:id="@+id/tv_analysis_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textColor="#388E3C"
+                android:layout_marginRight="30dp" />
+            <Button
+                android:id="@+id/btn_next_day"
+                android:layout_width="35dp"
+                android:layout_height="48dp"
+                android:background="@color/transparent"
+                android:layout_gravity="right"
+                android:paddingRight="0dp"
+                android:text=">"
+                android:textSize="25dp"
+                android:textColor="#388E3C"
+                android:includeFontPadding="false"
+                android:contentDescription="Next Day" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="점수: 95점 (지난주: 90점)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/tv_distance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 거리: 32km  |  총 시간: 1시간 20분"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#444444" />
+
+        <!-- Dot Chart for 급제동, 급가속, 급회전 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <!-- 급제동 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="급제동: "
+                    android:textSize="15sp"
+                    android:textColor="#444444" />
+                </LinearLayout>
+            <!-- 급가속 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="급가속: "
+                    android:textSize="15sp"
+                    android:textColor="#444444" />
+            </LinearLayout>
+            <!-- 급회전 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="급회전: "
+                    android:textSize="15sp"
+                    android:textColor="#444444" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="공회전: "
+                    android:textSize="15sp"
+                    android:textColor="#444444" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_carbon_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="탄소배출량: 0.32kg"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:id="@+id/tv_efficiency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연비 향상: +0.5km/L"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#444444" />
+
+        <TextView
+            android:id="@+id/tv_feedback_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="급가속이 다소 많았습니다. 다음 운전에서는 부드러운 출발을 신경써보세요."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#388E3C"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end" />
+    </LinearLayout>
+</LinearLayout>

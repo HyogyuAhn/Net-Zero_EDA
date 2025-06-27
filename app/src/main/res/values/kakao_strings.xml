@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kakao_common_header_text" formatted="false">sdk/2.8.3 sdk_type/kotlin os/android-%s lang/%s-%s device/%s origin/%s appPkg/%s app_ver/%s navisdk/%s</string>
+</resources>

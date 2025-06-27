@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "473526905336",
+    "project_id": "netzero-eda",
+    "storage_bucket": "netzero-eda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473526905336:android:4079584bc8434423058e0d",
+        "android_client_info": {
+          "package_name": "insa.eda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNUDCHJi7uLZwcX28s6Sdb8tgae4edMEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
