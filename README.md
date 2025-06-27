@@ -51,6 +51,7 @@
   - Jetpack Navigation Component
 - **Database**: 
   - Room Persistence Library
+  - Google Firebase
 - **Networking**: 
   - Retrofit2, OkHttp3
 - **Azure Services**:
