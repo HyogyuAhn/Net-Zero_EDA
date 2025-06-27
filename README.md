@@ -99,7 +99,4 @@ app
                     ├── RegisterActivity.java
                     └── MainApplication.kt
 ```
-
-## 기술 스택
-
   
